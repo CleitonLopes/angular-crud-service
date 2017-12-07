@@ -1,0 +1,24 @@
+
+<table class="table">
+  <thead>
+  <h3>Listagem</h3>
+
+  <app-button color="primary" routerLink="/posts/create">Criar</app-button>
+  <tr>
+    <th scope="col">ID</th>
+    <th scope="col">Title</th>
+    <th scope="col">Body</th>
+    <th scope="col">Action</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let post of posts">
+
+      <td>{{post.id}}</td>
+      <td>{{post.title}}</td>
+      <td>{{post.body}}</td>
+
+    </tr>
+
+  </tbody>
+</table>

@@ -1,0 +1,44 @@
+Angular CRUD - Service
+----------------------
+
+- Integração com Bootstrap e JQuery
+
+- npm i jquery --save
+- npm i bootstrap@3 --save
+
+- Dentro do arquivo .angular-cli.json
+
+Nas tags styles e scripts pode adicionar arquivos que serão compilados
+com a apalicação.
+
+- Importar os arquivos js dentro da tag scripts e no arquivo style.css que é um
+arquivo global importar o css padrão para toda a aplicação
+
+- Compilando projeto
+
+- ng build
+
+------------------------------------------------------------------------------------
+
+* Criando navegação Single Page Application
+
+- ng g component criar component post-list
+
+- usar uma api fake site https://jsonplaceholder.typicode.com/
+
+- Importar o Pacote para usar nas chamadas ajax, HttpClientModule
+
+- Criado um serviço do modulo post para as requisições http
+
+- ng g service /services/nome-service -> digo a onde vai ficar meus services
+
+- Importar o service no provider
+
+- Criado component post-save ng g component post-save
+
+- Criado um component button ng g component bootstrap/button
+
+- Dentro desse componente foi criado uma tag que permite passar valores dinamicos e
+no seu .ts foi criado um variavel que recebe o valor para mudar a cor da classe, tornando
+esse componente reutilizavel em outros locais da aplicacao
+
